@@ -15,6 +15,30 @@
     element.innerHTML = message
   }
 
+  ArticleController.prototype.getArticle = function() {
+    var that = this
+    var request = new XMLHttpRequest()
+    
+    request.open('GET', "https://content.guardianapis.com/search?api-key=eb7bc58f-215a-4dde-9ab0-61ed2768438d", true)
+
+    request.onload = function() {
+   
+    var data = JSON.parse(this.response)
+
+      if (request.status >= 200 && request.status < 300) {
+        var articles = data.response.results
+
+        for(var i = 0; i < articles.length; i++) {
+          that.articleListView.articleList.articles.push(new Article(articles[i].webTitle))
+        }
+        that.insert('app')
+      } else {
+        console.log('error')
+      }
+    }
+    request.send()
+  }
+
 
   exports.ArticleController = ArticleController
 })(this)
