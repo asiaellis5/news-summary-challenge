@@ -8,7 +8,8 @@
   }
 
   ArticleList.prototype.addArticle = function(headline) {
-    var article = new Article(headline)
+    var id = this.articles.length
+    var article = new Article(headline, id)
     this.articles.push(article)
   }
   exports.ArticleList = ArticleList
