@@ -3,6 +3,7 @@
     this.articleListView = articleListView
     this.articleList = this.articleListView.articleList
     this.document = doc
+    this.apiKey = config.APIKEY
   }
 
   ArticleController.prototype.addArticle = function(headline) {
@@ -19,7 +20,7 @@
     var that = this
     var request = new XMLHttpRequest()
     
-    request.open('GET', "https://content.guardianapis.com/search?api-key=eb7bc58f-215a-4dde-9ab0-61ed2768438d" , true)
+    request.open('GET', `https://content.guardianapis.com/search?api-key=${this.apiKey}` , true)
 
     request.onload = function() {
    
