@@ -6,11 +6,10 @@
   }
 
   ArticleListView.prototype.makeHTML = function() {
-    var array = ["<ul>"]
+    var array = []
     for(var i = 0; i < this.articleList.articles.length; i++) {
-      array.push("<li><div><a href=" + this.articleList.showArticles()[i].showUrl() + ">" + this.articleList.articles[i].showArticle() + "</a></div></li>")
+      array.push("<div id='headline'><img src=" + this.articleList.showArticles()[i].showImage() + "><h5><a href=" + this.articleList.showArticles()[i].showUrl() + ">" + this.articleList.articles[i].showArticle() + "</a></h5></div>")
     }
-    array.push("</ul>")
     return array.join("")
   }
 
