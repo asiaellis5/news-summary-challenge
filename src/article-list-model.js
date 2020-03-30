@@ -13,4 +13,4 @@
     this.articles.push(article)
   }
   exports.ArticleList = ArticleList
-})(this)
+})(this);
