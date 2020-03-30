@@ -19,7 +19,7 @@
     var that = this
     var request = new XMLHttpRequest()
     
-    request.open('GET', "https://content.guardianapis.com/search?api-key=", true)
+    request.open('GET', , true)
 
     request.onload = function() {
    
@@ -29,7 +29,8 @@
         var articles = data.response.results
 
         for(var i = 0; i < articles.length; i++) {
-          that.articleListView.articleList.articles.push(new Article(articles[i].webTitle))
+          var id = that.articleList.articles.length
+          that.articleListView.articleList.articles.push(new Article(articles[i].webTitle, id))
         }
         that.insert('app')
       } else {
@@ -38,6 +39,7 @@
     }
     request.send()
   }
+
 
 
   exports.ArticleController = ArticleController
