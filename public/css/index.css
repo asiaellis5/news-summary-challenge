@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
+
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -13,12 +15,16 @@ body {
 }
 
 #headline {
+  border-radius: 25px;
   border-style: solid;
   position: center;
   text-align: center;
-  width: 400px;
+  width: 460px;
+  height: 300px;
   margin: auto;
+  font-size: 20px;
 }
+
 
 img {
   height: 200px;
