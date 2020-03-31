@@ -4,12 +4,19 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  overflow: scroll;
+  border: none;
+}
+
 #headline {
-  flex-direction: row;
   border-style: solid;
   position: center;
   text-align: center;
-  width: 600px;
+  width: 400px;
   margin: auto;
 }
 
