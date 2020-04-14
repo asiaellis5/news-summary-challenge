@@ -3,8 +3,19 @@
 
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  text-transform: none;
+  background-color: #484d5c;
+  color: black;
 }
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #ffce00;
+  font-size: 75px;
+}
+
 
 #app {
   display: flex;
@@ -15,7 +26,8 @@ body {
 }
 
 #headline {
-  border-radius: 25px;
+  /* border-radius: 25px; */
+  background-color:#DDDDDD;
   border-style: solid;
   position: center;
   text-align: center;
@@ -23,6 +35,8 @@ body {
   height: 300px;
   margin: auto;
   font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5px;
 }
 
 
