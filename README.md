@@ -1,12 +1,19 @@
 # News Summary challenge
 
-## Overview
+Weekend challenge completed at Makers Academy. It pulls in the Guardian API for the top 10 headlines at the time and allows the user to see the Headline and a picture and click on them to read the full Guardian article. Front end JavaScript application with serverless architecture and a test suite that I wrote myself.
 
-* Challenge time: rest of the day and weekend, until Monday 9am.
-* Feel free to use Google, your notes, books, etc. but work on your own.
-* If you refer to the solution of another coach or student, please put a link to that in your README.
-* If you have a partial solution, **still check in a partial solution** and send in a pull request.
-* You must submit a pull request to this repo with your code by 9am Monday morning.
+## How to Run
+Clone this repo, from the command line navigate to the news-summary-challenge directory and in the command line type:
+
+```
+npm install
+```
+
+Once the dependancies are installed, Right click on the index.html file, click copy path and paste this into the Google Chrome browser to run the app. The top 10 articles currently on the Guardian site will appear.
+
+### Testing
+This App uses a test library I made myself, using the assert function to test for truthyness. To check the test suite, open the SpecRunner.html file in your browser and open the console in the developer tools and it will say if the test is passing or will assert that it isnt.
+
 
 ## Challenge
 
