@@ -3,13 +3,33 @@
 Weekend challenge completed at Makers Academy. It pulls in the Guardian API for the top 10 headlines at the time and allows the user to see the Headline and a picture and click on them to read the full Guardian article. Front end JavaScript application with serverless architecture and a test suite that I wrote myself.
 
 ## How to Run
-Clone this repo, from the command line navigate to the news-summary-challenge directory and in the command line type:
+
+Clone this repo, from the command line navigate to the root directory and in the command line check to see if you ahave node.js installed on yout machine by typing:
 
 ```
-npm install
+node -v
 ```
 
-Once the dependancies are installed, Right click on the index.html file, click copy path and paste this into the Google Chrome browser to run the app. The top 10 articles currently on the Guardian site will appear.
+If not, install it by typing in the following command:
+
+```
+brew install node
+```
+
+Now we want to initialize Node with the Http-Server library. From the root directory, in the command line type:
+
+```
+npm install http-server --save
+```
+
+You can now run the local server from command line by typing:
+
+```
+node node_modules/http-server/bin/http-server
+```
+
+Then visit: localhost://8080
+
 
 ### Testing
 This App uses a test library I made myself, using the assert function to test for truthyness. To check the test suite, open the SpecRunner.html file in your browser and open the console in the developer tools and it will say if the test is passing or will assert that it isnt.
