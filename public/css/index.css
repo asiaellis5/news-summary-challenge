@@ -26,12 +26,11 @@ h1 {
 }
 
 #headline {
-  /* border-radius: 25px; */
-  background-color:#DDDDDD;
+  background-color: #484d5c;
   border-style: solid;
   position: center;
   text-align: center;
-  width: 460px;
+  width: 400px;
   height: 300px;
   margin: auto;
   font-size: 20px;
@@ -41,10 +40,15 @@ h1 {
 
 
 img {
+  margin: 5px;
   height: 200px;
   width: 300px
 }
 
 p {
   font-size: 15px;
+}
+
+a {
+  color: #ffce00
 }
